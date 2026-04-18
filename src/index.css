@@ -122,6 +122,57 @@ button:focus-visible {
   gap: 1rem;
 }
 
+main {
+  min-height: calc(100vh - 72px - 96px);
+}
+
+.hero {
+  padding: 5rem 0 3rem;
+}
+
+.hero-eyebrow {
+  margin: 0;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.82rem;
+}
+
+.hero h1 {
+  margin: 0.75rem 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--color-primary);
+}
+
+.section-block {
+  margin-top: 3rem;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.feature-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .grid-3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 @media (max-width: 768px) {
   .header-inner {
     flex-wrap: wrap;
@@ -135,5 +186,10 @@ button:focus-visible {
 
   .footer-inner {
     flex-direction: column;
+  }
+
+  .grid-3,
+  .grid-2 {
+    grid-template-columns: 1fr;
   }
 }
