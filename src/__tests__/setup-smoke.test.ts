@@ -1,4 +1,8 @@
-import { describe, expect, it } from 'vitest'
+import { afterEach, describe, expect, it } from 'vitest'
+
+afterEach(() => {
+  document.body.innerHTML = ''
+})
 
 describe('test setup', () => {
   it('works with jest-dom matcher in jsdom', () => {
