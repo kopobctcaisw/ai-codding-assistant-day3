@@ -1,6 +1,6 @@
 import { PrimaryCTAButton } from '../components/PrimaryCTAButton'
 import { SectionTitle } from '../components/SectionTitle'
-import { consultingHours, consultingSteps, consultingTargets } from '../content/siteContent'
+import { consultingHours, consultingPreparationItems, consultingSteps, consultingTargets } from '../content/siteContent'
 
 export function ConsultingPage() {
   return (
@@ -31,6 +31,17 @@ export function ConsultingPage() {
             </ol>
           </article>
         </div>
+      </section>
+
+      <section className="container section-block">
+        <article className="feature-card">
+          <h3>상담 전 준비사항</h3>
+          <ul>
+            {consultingPreparationItems.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        </article>
       </section>
 
       <section className="container section-block">

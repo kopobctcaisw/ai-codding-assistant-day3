@@ -19,6 +19,17 @@ export type FaqItem = {
   answer: string
 }
 
+export type BannerCTA = {
+  title: string
+  description: string
+  buttonLabel: string
+}
+
+export type LearningProcessStep = {
+  title: string
+  description: string
+}
+
 export const KAKAO_CHANNEL_URL = 'https://pf.kakao.com/_sample'
 
 export const curriculumHighlights: readonly CurriculumHighlight[] = [
@@ -44,6 +55,19 @@ export const testimonials: readonly Testimonial[] = [
   {
     name: '이OO',
     summary: '매주 제공되는 피드백이 명확해 공부 우선순위가 선명해졌고 성적이 꾸준히 상승했습니다.',
+  },
+]
+
+export const homePageCtaBanners: readonly BannerCTA[] = [
+  {
+    title: '학습 흐름이 흔들리기 전에 바로 점검하세요',
+    description: '중간 점검 상담으로 현재 위치를 확인하고 다음 주 학습 계획까지 한 번에 정리합니다.',
+    buttonLabel: '중간 상담 신청하기',
+  },
+  {
+    title: '목표 달성까지 이어지는 밀착 코칭을 시작하세요',
+    description: '하단 CTA에서 빠르게 상담을 예약하고 맞춤 커리큘럼 설계를 시작할 수 있습니다.',
+    buttonLabel: '맞춤 코칭 시작하기',
   },
 ]
 
@@ -75,6 +99,25 @@ export const faqItems: readonly FaqItem[] = [
   },
 ]
 
+export const learningProcessSteps: readonly LearningProcessStep[] = [
+  {
+    title: '진단',
+    description: '현재 학습 수준과 목표 구간을 데이터 기반으로 진단합니다.',
+  },
+  {
+    title: '계획',
+    description: '진단 결과를 바탕으로 주간·월간 학습 계획을 수립합니다.',
+  },
+  {
+    title: '실행',
+    description: '핵심 과제 중심으로 학습을 실행하고 진행 상황을 기록합니다.',
+  },
+  {
+    title: '피드백',
+    description: '학습 로그를 분석해 보완 과제를 제시하고 다음 계획에 반영합니다.',
+  },
+]
+
 export const consultingTargets: readonly string[] = [
   '학습 방향 설정이 필요한 예비 상위권 학습자',
   '단기간에 점수 구간을 끌어올려야 하는 학습자',
@@ -85,6 +128,12 @@ export const consultingSteps: readonly string[] = [
   '카카오톡 채널 상담 신청',
   '현재 수준·목표 정밀 진단',
   '개인 맞춤 커리큘럼 제안 및 시작',
+]
+
+export const consultingPreparationItems: readonly string[] = [
+  '최근 모의고사 또는 학교 시험 성적표',
+  '현재 사용 중인 교재 및 학습 루틴 요약',
+  '상담에서 반드시 해결하고 싶은 학습 고민 2~3가지',
 ]
 
 export const consultingHours = '평일 10:00 ~ 21:00 / 토요일 10:00 ~ 16:00'

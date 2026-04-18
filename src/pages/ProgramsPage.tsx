@@ -1,5 +1,5 @@
 import { SectionTitle } from '../components/SectionTitle'
-import { faqItems, programs } from '../content/siteContent'
+import { faqItems, learningProcessSteps, programs } from '../content/siteContent'
 
 export function ProgramsPage() {
   return (
@@ -16,6 +16,18 @@ export function ProgramsPage() {
               <h3>{program.name}</h3>
               <p>대상: {program.target}</p>
               <p>성과: {program.outcome}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="container section-block">
+        <SectionTitle title="학습 프로세스" subtitle="진단→계획→실행→피드백으로 학습을 운영합니다." />
+        <div className="grid-2">
+          {learningProcessSteps.map((step) => (
+            <article key={step.title} className="feature-card">
+              <h3>{step.title}</h3>
+              <p>{step.description}</p>
             </article>
           ))}
         </div>

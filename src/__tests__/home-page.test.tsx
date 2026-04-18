@@ -1,5 +1,6 @@
 import { render, screen } from '@testing-library/react'
 import { describe, expect, it } from 'vitest'
+import { homePageCtaBanners } from '../content/siteContent'
 import { HomePage } from '../pages/HomePage'
 
 describe('HomePage', () => {
@@ -10,5 +11,7 @@ describe('HomePage', () => {
     expect(screen.getByText('정밀 진단 기반 설계')).toBeInTheDocument()
     expect(screen.getByText('성과 후기')).toBeInTheDocument()
     expect(screen.getByRole('link', { name: '지금 상담 시작하기' })).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: homePageCtaBanners[0].buttonLabel })).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: homePageCtaBanners[1].buttonLabel })).toBeInTheDocument()
   })
 })
