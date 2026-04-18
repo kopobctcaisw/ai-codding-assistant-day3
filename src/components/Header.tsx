@@ -8,7 +8,7 @@ export function Header() {
         <NavLink to="/" className="brand">
           Personalized Learning Studio
         </NavLink>
-        <nav className="nav" aria-label="주요 메뉴">
+        <nav className="nav">
           <NavLink to="/">홈</NavLink>
           <NavLink to="/programs">프로그램</NavLink>
           <NavLink to="/consulting">상담안내</NavLink>

@@ -32,8 +32,9 @@ a {
 .site-header {
   position: sticky;
   top: 0;
-  backdrop-filter: blur(20px);
-  background: rgba(248, 249, 252, 0.8);
+  backdrop-filter: blur(8px);
+  background: rgba(248, 249, 252, 0.92);
+  border-bottom: 1px solid #e5e7eb;
 }
 
 .header-inner {
@@ -58,12 +59,11 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 3.5rem;
-  padding: 0.65rem 2rem;
+  padding: 0.65rem 1rem;
   border-radius: 999px;
-  background: linear-gradient(135deg, #a68230, #ebc168);
-  color: #00071b;
-  font-weight: 700;
+  background: var(--color-primary);
+  color: #fff;
+  font-weight: 600;
 }
 
 .cta-button:focus-visible,
@@ -97,21 +97,20 @@ button:focus-visible {
 
 .testimonial-card {
   background: var(--color-surface);
-  border-radius: 1.5rem;
-  padding: 2rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 1rem;
 }
 
 .testimonial-name {
   margin-top: 0.75rem;
-  font-size: 0.75rem;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
   font-weight: 700;
-  color: var(--color-accent);
+  color: var(--color-primary);
 }
 
 .site-footer {
   margin-top: 4rem;
+  border-top: 1px solid #e5e7eb;
   background: #fff;
 }
 
