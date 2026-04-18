@@ -1,6 +1,27 @@
+export type CurriculumHighlight = {
+  title: string
+  description: string
+}
+
+export type Testimonial = {
+  name: string
+  summary: string
+}
+
+export type Program = {
+  name: string
+  target: string
+  outcome: string
+}
+
+export type FaqItem = {
+  question: string
+  answer: string
+}
+
 export const KAKAO_CHANNEL_URL = 'https://pf.kakao.com/_sample'
 
-export const curriculumHighlights = [
+export const curriculumHighlights: readonly CurriculumHighlight[] = [
   {
     title: '정밀 진단 기반 설계',
     description: '현재 성취도와 목표 구간을 정교하게 분석해 개인별 커리큘럼을 설계합니다.',
@@ -15,7 +36,7 @@ export const curriculumHighlights = [
   },
 ]
 
-export const testimonials = [
+export const testimonials: readonly Testimonial[] = [
   {
     name: '김OO',
     summary: '맞춤 커리큘럼 덕분에 흔들리던 학습 루틴이 안정됐고 목표 점수에 도달했습니다.',
@@ -26,7 +47,7 @@ export const testimonials = [
   },
 ]
 
-export const programs = [
+export const programs: readonly Program[] = [
   {
     name: 'Foundation Track',
     target: '기초 개념을 체계적으로 재정비하고 싶은 학습자',
@@ -39,7 +60,7 @@ export const programs = [
   },
 ]
 
-export const faqItems = [
+export const faqItems: readonly FaqItem[] = [
   {
     question: '초기 상담은 어떻게 진행되나요?',
     answer: '사전 문답과 목표 진단을 통해 현재 수준을 파악한 뒤 개인별 학습 로드맵을 제안합니다.',
@@ -54,12 +75,16 @@ export const faqItems = [
   },
 ]
 
-export const consultingTargets = [
+export const consultingTargets: readonly string[] = [
   '학습 방향 설정이 필요한 예비 상위권 학습자',
   '단기간에 점수 구간을 끌어올려야 하는 학습자',
   '개인 맞춤 관리형 커리큘럼이 필요한 학습자',
 ]
 
-export const consultingSteps = ['카카오톡 채널 상담 신청', '현재 수준·목표 정밀 진단', '개인 맞춤 커리큘럼 제안 및 시작']
+export const consultingSteps: readonly string[] = [
+  '카카오톡 채널 상담 신청',
+  '현재 수준·목표 정밀 진단',
+  '개인 맞춤 커리큘럼 제안 및 시작',
+]
 
 export const consultingHours = '평일 10:00 ~ 21:00 / 토요일 10:00 ~ 16:00'
