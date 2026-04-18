@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Programs - Personalized Learning Studio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary-container": "#0f1f3d",
+                        "on-error": "#ffffff",
+                        "on-primary-fixed-variant": "#384667",
+                        "on-background": "#191c1e",
+                        "surface-variant": "#e1e2e5",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed": "#ffdfa0",
+                        "outline-variant": "#c5c6ce",
+                        "surface-container-high": "#e7e8eb",
+                        "on-tertiary": "#ffffff",
+                        "surface-tint": "#505e80",
+                        "inverse-surface": "#2e3133",
+                        "on-tertiary-fixed-variant": "#5c4300",
+                        "surface-bright": "#f8f9fc",
+                        "surface": "#f8f9fc",
+                        "inverse-primary": "#b7c6ed",
+                        "surface-container-highest": "#e1e2e5",
+                        "error-container": "#ffdad6",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed": "#161b28",
+                        "secondary-container": "#dbdff1",
+                        "on-tertiary-fixed": "#261a00",
+                        "on-secondary-fixed-variant": "#414754",
+                        "on-tertiary-container": "#a68230",
+                        "on-primary-container": "#7887ab",
+                        "primary-fixed-dim": "#b7c6ed",
+                        "tertiary-fixed-dim": "#ebc168",
+                        "inverse-on-surface": "#f0f1f4",
+                        "on-primary-fixed": "#0a1b39",
+                        "on-surface": "#191c1e",
+                        "secondary-fixed-dim": "#c1c6d7",
+                        "error": "#ba1a1a",
+                        "secondary-fixed": "#dee2f3",
+                        "primary": "#00071b",
+                        "on-error-container": "#93000a",
+                        "surface-dim": "#d9dadd",
+                        "on-primary": "#ffffff",
+                        "tertiary": "#0e0700",
+                        "on-secondary-container": "#5d6271",
+                        "primary-fixed": "#d8e2ff",
+                        "secondary": "#595e6d",
+                        "surface-container-low": "#f2f3f6",
+                        "surface-container": "#edeef1",
+                        "tertiary-container": "#2b1e00",
+                        "on-surface-variant": "#45474e",
+                        "background": "#f8f9fc",
+                        "outline": "#75777e"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope", "sans-serif"],
+                        "body": ["Manrope", "sans-serif"],
+                        "label": ["Manrope", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .gold-gradient {
+            background: linear-gradient(135deg, #a68230, #ebc168);
+        }
+        .navy-gradient {
+            background: linear-gradient(180deg, #00071b, #0f1f3d);
+        }
+        .ambient-shadow {
+            box-shadow: 0 24px 48px -12px rgba(15, 31, 61, 0.08);
+        }
+        .glassmorphism {
+            background: rgba(248, 249, 252, 0.8);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-primary font-body antialiased">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 glassmorphism no-border shadow-[0_24px_48px_-12px_rgba(15,31,61,0.08)]">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-xl font-extrabold tracking-tighter text-[#00071b] dark:text-[#f8f9fc]">
+                Personalized Learning Studio
+            </div>
+<div class="hidden md:flex items-center gap-8 font-['Manrope'] font-medium tracking-tight">
+<a class="text-[#00071b]/70 dark:text-[#f8f9fc]/70 hover:text-[#a68230] transition-colors" href="#">Home</a>
+<a class="text-[#a68230] dark:text-[#ebc168] font-bold border-b-2 border-[#a68230] dark:border-[#ebc168] pb-1" href="#">Programs</a>
+<a class="text-[#00071b]/70 dark:text-[#f8f9fc]/70 hover:text-[#a68230] transition-colors" href="#">Consulting</a>
+</div>
+<button class="gold-gradient text-primary rounded-full px-8 py-3 h-[3.5rem] font-semibold hover:opacity-90 transition-all duration-300 active:scale-[0.98]">
+                Consult via Kakao
+            </button>
+</div>
+</nav>
+<!-- Header Section -->
+<header class="pt-40 pb-24 px-8 navy-gradient text-surface-bright relative overflow-hidden">
+<div class="max-w-7xl mx-auto relative z-10">
+<div class="max-w-3xl">
+<p class="text-on-tertiary-container uppercase tracking-[0.05em] text-sm font-semibold mb-4">Our Tracks</p>
+<h1 class="font-headline text-[3.5rem] leading-tight font-extrabold tracking-tight mb-6">
+                    프로그램 안내
+                </h1>
+<p class="text-xl text-surface-variant leading-relaxed">
+                    학습 목표와 수준에 맞춘 트랙을 제안합니다.
+                </p>
+</div>
+</div>
+<!-- Decorative subtle background image -->
+<div class="absolute right-0 top-0 w-1/2 h-full opacity-20 pointer-events-none" data-alt="abstract arrangement of stacked books forming architectural shapes in dim lighting" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDf8ZCs9pwhIECL5hFccvI87CU1GXkgt6vd018b82r7MCbcbFd5xQ6Y1z8w5aYyY0u_mCH_VqakNBSy-CtFqCbk7NdU4waNsq-QVj3dThN22aKHuov0PEYvGMwMF99PHyhrpSEMCwsOVcWVvduaaYg04C3dw8NZA7TRUEkiwe0IEI0x3hHOdUBjV6YPrKmRsRxlKNqXDRRkIGBHZzv3M3v1EkD--tmbCjuG-9lOAgHv9X6GE90HUyr07GunJZOY63TnbYTEzytnNP4'); background-size: cover; background-position: center;">
+</div>
+<div class="absolute inset-0 bg-gradient-to-r from-[#00071b] via-[#00071b]/80 to-transparent pointer-events-none"></div>
+</header>
+<!-- Main Content -->
+<main class="py-24 px-8 bg-surface">
+<div class="max-w-7xl mx-auto">
+<!-- Programs Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-32">
+<!-- Track 1 -->
+<article class="bg-surface-container-lowest rounded-xl p-10 ambient-shadow border-t-4 border-on-tertiary-container relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-8 opacity-10 transform translate-x-4 -translate-y-4 group-hover:scale-110 transition-transform duration-500">
+<span class="material-symbols-outlined text-8xl" data-icon="school">school</span>
+</div>
+<h2 class="font-headline text-2xl font-bold mb-8 flex items-center gap-4">
+<span class="text-on-tertiary-container font-mono text-lg">01</span>
+                        입문 트랙
+                    </h2>
+<div class="space-y-8 relative z-10">
+<div>
+<h3 class="text-xs uppercase tracking-[0.05em] text-on-surface-variant font-bold mb-3">대상</h3>
+<p class="text-on-surface leading-relaxed border-l-2 border-surface-container-high pl-4 py-1">
+                                기초를 빠르게 다지고 싶은 학습자
+                            </p>
+</div>
+<div>
+<h3 class="text-xs uppercase tracking-[0.05em] text-on-surface-variant font-bold mb-3">성과</h3>
+<p class="text-on-surface leading-relaxed border-l-2 border-on-tertiary-container pl-4 py-1">
+                                핵심 개념 정착과 학습 루틴 형성
+                            </p>
+</div>
+</div>
+</article>
+<!-- Track 2 -->
+<article class="bg-surface-container-lowest rounded-xl p-10 ambient-shadow border-t-4 border-primary relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-8 opacity-10 transform translate-x-4 -translate-y-4 group-hover:scale-110 transition-transform duration-500">
+<span class="material-symbols-outlined text-8xl" data-icon="trending_up">trending_up</span>
+</div>
+<h2 class="font-headline text-2xl font-bold mb-8 flex items-center gap-4">
+<span class="text-on-tertiary-container font-mono text-lg">02</span>
+                        심화 트랙
+                    </h2>
+<div class="space-y-8 relative z-10">
+<div>
+<h3 class="text-xs uppercase tracking-[0.05em] text-on-surface-variant font-bold mb-3">대상</h3>
+<p class="text-on-surface leading-relaxed border-l-2 border-surface-container-high pl-4 py-1">
+                                고득점/고난도 대비가 필요한 학습자
+                            </p>
+</div>
+<div>
+<h3 class="text-xs uppercase tracking-[0.05em] text-on-surface-variant font-bold mb-3">성과</h3>
+<p class="text-on-surface leading-relaxed border-l-2 border-primary pl-4 py-1">
+                                실전 적용력 강화와 약점 정밀 보완
+                            </p>
+</div>
+</div>
+</article>
+<!-- Track 3 -->
+<article class="bg-surface-container-lowest rounded-xl p-10 ambient-shadow border-t-4 border-on-tertiary-container relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-8 opacity-10 transform translate-x-4 -translate-y-4 group-hover:scale-110 transition-transform duration-500">
+<span class="material-symbols-outlined text-8xl" data-icon="work">work</span>
+</div>
+<h2 class="font-headline text-2xl font-bold mb-8 flex items-center gap-4">
+<span class="text-on-tertiary-container font-mono text-lg">03</span>
+                        프로페셔널 트랙
+                    </h2>
+<div class="space-y-8 relative z-10">
+<div>
+<h3 class="text-xs uppercase tracking-[0.05em] text-on-surface-variant font-bold mb-3">대상</h3>
+<p class="text-on-surface leading-relaxed border-l-2 border-surface-container-high pl-4 py-1">
+                                커리어 성장과 실무 역량 강화를 원하는 성인 학습자
+                            </p>
+</div>
+<div>
+<h3 class="text-xs uppercase tracking-[0.05em] text-on-surface-variant font-bold mb-3">성과</h3>
+<p class="text-on-surface leading-relaxed border-l-2 border-on-tertiary-container pl-4 py-1">
+                                직무 전문성 확보 및 프로젝트 수행 능력 극대화
+                            </p>
+</div>
+</div>
+</article>
+<!-- Track 4 -->
+<article class="bg-surface-container-lowest rounded-xl p-10 ambient-shadow border-t-4 border-primary relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-8 opacity-10 transform translate-x-4 -translate-y-4 group-hover:scale-110 transition-transform duration-500">
+<span class="material-symbols-outlined text-8xl" data-icon="public">public</span>
+</div>
+<h2 class="font-headline text-2xl font-bold mb-8 flex items-center gap-4">
+<span class="text-on-tertiary-container font-mono text-lg">04</span>
+                        글로벌 트랙
+                    </h2>
+<div class="space-y-8 relative z-10">
+<div>
+<h3 class="text-xs uppercase tracking-[0.05em] text-on-surface-variant font-bold mb-3">대상</h3>
+<p class="text-on-surface leading-relaxed border-l-2 border-surface-container-high pl-4 py-1">
+                                해외 유학 및 글로벌 환경 진출을 목표로 하는 학습자
+                            </p>
+</div>
+<div>
+<h3 class="text-xs uppercase tracking-[0.05em] text-on-surface-variant font-bold mb-3">성과</h3>
+<p class="text-on-surface leading-relaxed border-l-2 border-primary pl-4 py-1">
+                                글로벌 소통 능력 및 국제 공인 자격 취득
+                            </p>
+</div>
+</div>
+</article>
+</div>
+<!-- FAQ Section -->
+<section class="max-w-3xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline text-3xl font-extrabold mb-4">자주 묻는 질문</h2>
+<div class="w-16 h-1 bg-on-tertiary-container mx-auto"></div>
+</div>
+<div class="space-y-6">
+<details class="group bg-surface-container-lowest rounded-xl ambient-shadow [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between cursor-pointer p-6 font-semibold text-lg hover:text-on-tertiary-container transition-colors">
+<span>상담은 얼마나 걸리나요?</span>
+<span class="material-symbols-outlined text-on-surface-variant group-open:rotate-180 transition-transform duration-300" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="p-6 pt-0 text-on-surface-variant leading-relaxed">
+                            초기 상담은 보통 40분에서 1시간 정도 소요됩니다. 학습자의 현재 수준, 목표, 그리고 이전 학습 이력을 상세히 분석하여 맞춤형 트랙을 제안해 드립니다.
+                        </div>
+</details>
+<details class="group bg-surface-container-lowest rounded-xl ambient-shadow [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between cursor-pointer p-6 font-semibold text-lg hover:text-on-tertiary-container transition-colors">
+<span>트랙 변경이 가능한가요?</span>
+<span class="material-symbols-outlined text-on-surface-variant group-open:rotate-180 transition-transform duration-300" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="p-6 pt-0 text-on-surface-variant leading-relaxed">
+                            네, 가능합니다. 정기적인 평가와 상담을 통해 학습자의 성취도를 파악하고, 필요에 따라 입문에서 심화로 자연스럽게 트랙을 전환할 수 있도록 지원합니다.
+                        </div>
+</details>
+</div>
+</section>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f2f3f6] dark:bg-[#0f1f3d] w-full py-12 px-8">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto gap-6">
+<div class="text-lg font-bold text-[#00071b] dark:text-[#f8f9fc]">
+                Personalized Learning Studio
+            </div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="font-['Manrope'] text-sm leading-relaxed text-[#00071b]/60 dark:text-[#f8f9fc]/60 hover:text-[#a68230] hover:underline transition-all cursor-pointer" href="#">Privacy Policy</a>
+<a class="font-['Manrope'] text-sm leading-relaxed text-[#00071b]/60 dark:text-[#f8f9fc]/60 hover:text-[#a68230] hover:underline transition-all cursor-pointer" href="#">Terms of Service</a>
+<a class="font-['Manrope'] text-sm leading-relaxed text-[#00071b]/60 dark:text-[#f8f9fc]/60 hover:text-[#a68230] hover:underline transition-all cursor-pointer" href="#">Contact Us</a>
+</div>
+<div class="font-['Manrope'] text-sm leading-relaxed text-[#00071b] dark:text-[#f8f9fc]">
+                © 2024 Personalized Learning Studio. Built for Academic Excellence.
+            </div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>상담안내 - Personalized Learning Studio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-container": "#0f1f3d",
+                        "on-error": "#ffffff",
+                        "on-primary-fixed-variant": "#384667",
+                        "on-background": "#191c1e",
+                        "surface-variant": "#e1e2e5",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed": "#ffdfa0",
+                        "outline-variant": "#c5c6ce",
+                        "surface-container-high": "#e7e8eb",
+                        "on-tertiary": "#ffffff",
+                        "surface-tint": "#505e80",
+                        "inverse-surface": "#2e3133",
+                        "on-tertiary-fixed-variant": "#5c4300",
+                        "surface-bright": "#f8f9fc",
+                        "surface": "#f8f9fc",
+                        "inverse-primary": "#b7c6ed",
+                        "surface-container-highest": "#e1e2e5",
+                        "error-container": "#ffdad6",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed": "#161b28",
+                        "secondary-container": "#dbdff1",
+                        "on-tertiary-fixed": "#261a00",
+                        "on-secondary-fixed-variant": "#414754",
+                        "on-tertiary-container": "#a68230",
+                        "on-primary-container": "#7887ab",
+                        "primary-fixed-dim": "#b7c6ed",
+                        "tertiary-fixed-dim": "#ebc168",
+                        "inverse-on-surface": "#f0f1f4",
+                        "on-primary-fixed": "#0a1b39",
+                        "on-surface": "#191c1e",
+                        "secondary-fixed-dim": "#c1c6d7",
+                        "error": "#ba1a1a",
+                        "secondary-fixed": "#dee2f3",
+                        "primary": "#00071b",
+                        "on-error-container": "#93000a",
+                        "surface-dim": "#d9dadd",
+                        "on-primary": "#ffffff",
+                        "tertiary": "#0e0700",
+                        "on-secondary-container": "#5d6271",
+                        "primary-fixed": "#d8e2ff",
+                        "secondary": "#595e6d",
+                        "surface-container-low": "#f2f3f6",
+                        "surface-container": "#edeef1",
+                        "tertiary-container": "#2b1e00",
+                        "on-surface-variant": "#45474e",
+                        "background": "#f8f9fc",
+                        "outline": "#75777e"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope", "sans-serif"],
+                        "body": ["Manrope", "sans-serif"],
+                        "label": ["Manrope", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; }
+        .bg-gold-gradient { background: linear-gradient(135deg, #a68230 0%, #ebc168 100%); }
+    </style>
+</head>
+<body class="bg-surface text-on-surface min-h-screen flex flex-col pt-24">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#f8f9fc]/80 dark:bg-[#00071b]/80 backdrop-blur-md shadow-[0_24px_48px_-12px_rgba(15,31,61,0.08)]">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-xl font-extrabold tracking-tighter text-[#00071b] dark:text-[#f8f9fc] cursor-pointer active:scale-[0.98] transform transition-transform">
+                Personalized Learning Studio
+            </div>
+<div class="hidden md:flex gap-8 items-center font-['Manrope'] font-medium tracking-tight">
+<a class="text-[#00071b]/70 dark:text-[#f8f9fc]/70 hover:text-[#a68230] transition-colors hover:opacity-90 transition-all duration-300" href="#">Home</a>
+<a class="text-[#00071b]/70 dark:text-[#f8f9fc]/70 hover:text-[#a68230] transition-colors hover:opacity-90 transition-all duration-300" href="#">Programs</a>
+<a class="text-[#a68230] dark:text-[#ebc168] font-bold border-b-2 border-[#a68230] dark:border-[#ebc168] pb-1" href="#">Consulting</a>
+</div>
+<button class="hidden md:block bg-gold-gradient text-primary px-6 py-3 rounded-full font-bold text-sm tracking-wide hover:opacity-90 transition-all duration-300 shadow-[0_24px_48px_-12px_rgba(15,31,61,0.08)]">
+                Consult via Kakao
+            </button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow">
+<!-- Header Section -->
+<section class="max-w-7xl mx-auto px-8 py-24 md:py-32 grid md:grid-cols-2 gap-16 items-center">
+<div class="relative z-10">
+<h1 class="font-headline text-[3.5rem] leading-[1.1] tracking-[-0.02em] font-extrabold text-primary mb-6">
+                    상담안내
+                </h1>
+<p class="font-body text-xl leading-relaxed text-on-surface-variant max-w-lg">
+                    현재 수준 진단부터 맞춤 제안까지 빠르게 안내합니다.
+                </p>
+<div class="w-24 h-1 bg-on-tertiary-container mt-12"></div>
+</div>
+<div class="relative h-[400px] md:h-[600px] rounded-xl overflow-hidden shadow-[0_24px_48px_-12px_rgba(15,31,61,0.08)]">
+<img alt="Students studying" class="w-full h-full object-cover" data-alt="Students collaborating in a bright modern library setting with soft natural lighting and wood accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQ8KQ4RZYrGQAuLsnca0-dJzmMBpO0V3CuBnnFNspB-QR5E5PILilhfTei1VNzvtnxgB_SDR2dJSZxK9EaAcVwex_ujUH7aChHel5OBtrWROODGfsi_wm_1hS0sDydjclERMT8qsd-CqKYNjebcBQBFkH0G_gm7-lyNhgZLYFUaahOP1j4DbD41mcd6Sd6sGQT0VXLtoZeFFkbszY1gRAOgD5hUwztqF7jdAl6WgOu4b24ZfDW_C07YXzzzyY4UoBGl4UH_uGZmuo"/>
+</div>
+</section>
+<!-- Consulting Targets & Process (Bento Grid) -->
+<section class="bg-surface-container-low py-24">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Targets -->
+<div class="md:col-span-1 bg-surface-container-lowest rounded-xl p-10 relative overflow-hidden">
+<h2 class="font-headline text-2xl font-bold text-primary mb-8 flex items-center gap-3">
+<span class="text-on-tertiary-container material-symbols-outlined" data-weight="fill">group</span>
+                            상담 대상
+                        </h2>
+<ul class="space-y-6">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-on-tertiary-container mt-1">check_circle</span>
+<span class="font-body text-on-surface-variant leading-relaxed">학습 습관 개선이 필요한 학생</span>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-on-tertiary-container mt-1">check_circle</span>
+<span class="font-body text-on-surface-variant leading-relaxed">현재 성적 정체기를 겪고 있는 학생</span>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-on-tertiary-container mt-1">check_circle</span>
+<span class="font-body text-on-surface-variant leading-relaxed">맞춤형 입시 전략이 필요한 학부모 및 학생</span>
+</li>
+</ul>
+</div>
+<!-- Process -->
+<div class="md:col-span-2 bg-surface-container-lowest rounded-xl p-10">
+<h2 class="font-headline text-2xl font-bold text-primary mb-12 flex items-center gap-3">
+<span class="text-on-tertiary-container material-symbols-outlined" data-weight="fill">route</span>
+                            상담 절차
+                        </h2>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="relative">
+<div class="text-5xl font-extrabold text-surface-container-high absolute -top-6 -left-4 z-0">01</div>
+<div class="relative z-10">
+<h3 class="font-bold text-primary mb-2">신청 및 예약</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">카카오톡 또는 전화를 통해 상담 일정을 조율합니다.</p>
+</div>
+</div>
+<div class="relative mt-8 md:mt-12">
+<div class="text-5xl font-extrabold text-surface-container-high absolute -top-6 -left-4 z-0">02</div>
+<div class="relative z-10">
+<h3 class="font-bold text-primary mb-2">사전 진단</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">온라인 설문 및 간단한 테스트를 통해 현재 상태를 파악합니다.</p>
+</div>
+</div>
+<div class="relative mt-16 md:mt-0">
+<div class="text-5xl font-extrabold text-surface-container-high absolute -top-6 -left-4 z-0">03</div>
+<div class="relative z-10">
+<h3 class="font-bold text-primary mb-2">대면/비대면 상담</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">전문 컨설턴트와의 심층 상담을 통해 문제점을 진단합니다.</p>
+</div>
+</div>
+<div class="relative mt-24 md:mt-12">
+<div class="text-5xl font-extrabold text-surface-container-high absolute -top-6 -left-4 z-0">04</div>
+<div class="relative z-10">
+<h3 class="font-bold text-primary mb-2">솔루션 제공</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">개인별 맞춤 학습 계획 및 로드맵을 제안합니다.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Schedule & CTA -->
+<section class="max-w-4xl mx-auto px-8 py-32 text-center">
+<h2 class="font-headline text-3xl font-extrabold text-primary mb-8">상담 가능 시간</h2>
+<div class="bg-surface-container-lowest rounded-xl p-8 mb-12 shadow-[0_24px_48px_-12px_rgba(15,31,61,0.08)] inline-block text-left">
+<div class="flex items-center gap-6 mb-4">
+<span class="material-symbols-outlined text-on-tertiary-container text-3xl">calendar_today</span>
+<div>
+<p class="font-bold text-primary text-lg">평일 (월 - 금)</p>
+<p class="text-on-surface-variant">10:00 ~ 21:00</p>
+</div>
+</div>
+<div class="w-full h-[1px] bg-surface-variant my-4"></div>
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-on-tertiary-container text-3xl">event</span>
+<div>
+<p class="font-bold text-primary text-lg">토요일</p>
+<p class="text-on-surface-variant">10:00 ~ 16:00</p>
+</div>
+</div>
+</div>
+<div>
+<button class="bg-gold-gradient text-primary px-10 py-5 rounded-full font-bold text-lg tracking-wide hover:opacity-90 transition-all duration-300 shadow-[0_24px_48px_-12px_rgba(15,31,61,0.08)] inline-flex items-center gap-3">
+<span class="material-symbols-outlined">chat</span>
+                    카카오톡으로 상담 신청
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f2f3f6] dark:bg-[#0f1f3d] w-full py-12 px-8">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto gap-6">
+<div class="text-lg font-bold text-[#00071b] dark:text-[#f8f9fc]">
+                Personalized Learning Studio
+            </div>
+<div class="font-['Manrope'] text-sm leading-relaxed text-[#00071b]/60 dark:text-[#f8f9fc]/60">
+                © 2024 Personalized Learning Studio. Built for Academic Excellence.
+            </div>
+<div class="flex gap-6 font-['Manrope'] text-sm leading-relaxed">
+<a class="text-[#00071b]/60 dark:text-[#f8f9fc]/60 hover:text-[#a68230] hover:underline transition-all cursor-pointer" href="#">Privacy Policy</a>
+<a class="text-[#00071b]/60 dark:text-[#f8f9fc]/60 hover:text-[#a68230] hover:underline transition-all cursor-pointer" href="#">Terms of Service</a>
+<a class="text-[#00071b]/60 dark:text-[#f8f9fc]/60 hover:text-[#a68230] hover:underline transition-all cursor-pointer" href="#">Contact Us</a>
+</div>
+</div>
+</footer>
+</body></html>
