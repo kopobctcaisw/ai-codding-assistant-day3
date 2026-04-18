@@ -18,7 +18,7 @@ export function HomePage() {
         <div className="grid-3">
           {curriculumHighlights.map((item) => (
             <article key={item.title} className="feature-card">
-              <h3>{item.title === '정밀 진단 기반 설계' ? '학습 진단 기반 설계' : item.title}</h3>
+              <h3>{item.title}</h3>
               <p>{item.description}</p>
             </article>
           ))}
